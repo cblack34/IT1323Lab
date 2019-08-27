@@ -7,6 +7,8 @@ BEGIN
     // Create variables
     CREATE lastWeeksHighs
     CREATE highsPlusTen
+    CREATE max
+    CREATE min
 
     // inialize literals
     lastWeeksHighs ← { 82, 87, 89, 90, 95, 94, 97 }
