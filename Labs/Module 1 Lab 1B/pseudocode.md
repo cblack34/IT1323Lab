@@ -75,7 +75,7 @@ END totalSales
 
 ## Helper Methods
 ```
-METHOD printTableHeader(headers, rowHeader=null, columnWidth = 20)
+METHOD printTableHeader(headers, rowHeader=null, columnWidth = 13)
 BEGIN 
     IF rowHeader != null THEN
         PRINT rowHeader with width of columnWidth
@@ -84,11 +84,13 @@ BEGIN
     FOREACH header in headers
         PRINT header with width of columnWidth
     ENDFOREACH
+    
+    PRINT NEW LINE
 
 END printTableHeader
 ```
 ```
-METHOD printRow(row, rowHeader=null, columnWidth = 20)
+METHOD printRow(row, rowHeader=null, columnWidth = 13)
 BEGIN 
     IF rowHeader != null THEN
         PRINT rowHeader with width of columnWidth
@@ -97,6 +99,8 @@ BEGIN
     FOREACH cell in row
         PRINT cell with width of columnWidth
     ENDFOREACH
+
+    PRINT NEW LINE
 
 END printRow
 ```
