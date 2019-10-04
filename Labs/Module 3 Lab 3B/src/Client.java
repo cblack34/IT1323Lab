@@ -16,4 +16,15 @@ public class Client {
         this.billingCity = billingCity;
         this.billingState = billingState;
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "companyName='" + companyName + '\'' +
+                ", companyID='" + companyID + '\'' +
+                ", billingAddress='" + billingAddress + '\'' +
+                ", billingCity='" + billingCity + '\'' +
+                ", billingState='" + billingState + '\'' +
+                '}';
+    }
 }

@@ -15,4 +15,18 @@ public class HourlyClient extends Client {
     public double billing(){
         return hourlyRate*hoursBilled;
     }
+
+    @Override
+    public String toString() {
+        return "HourlyClient{" +
+                "hourlyRate=" + hourlyRate +
+                ", hoursBilled=" + hoursBilled +
+                ", companyName='" + companyName + '\'' +
+                ", companyID='" + companyID + '\'' +
+                ", billingAddress='" + billingAddress + '\'' +
+                ", billingCity='" + billingCity + '\'' +
+                ", billingState='" + billingState + '\'' +
+                ", billing='" + billing() + '\'' +
+                '}';
+    }
 }
