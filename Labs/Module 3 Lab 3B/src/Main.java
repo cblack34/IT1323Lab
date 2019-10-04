@@ -1,3 +1,11 @@
+/* 
+* Name: Clayton Black
+* Date: 10-03-2019
+* Assignment Name: Module 3 Lab 3B
+* Assignment Brief: ArrayList and inheritance
+* Sources: 
+*/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -44,8 +52,6 @@ public class Main {
         }
 
         System.out.printf("\n%20s %15.2f\n", "Total Billing", totalBillingAmount);
-
-
     }
 
     private static String getStringInput(String prompt){
