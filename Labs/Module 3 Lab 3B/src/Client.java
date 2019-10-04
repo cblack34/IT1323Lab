@@ -1,3 +1,11 @@
+/*
+ * Name: Clayton Black
+ * Date: 10-03-2019
+ * Assignment Name: Module 3 Lab 3B
+ * Assignment Brief: ArrayList and inheritance
+ * Sources:
+ */
+
 public class Client {
     String companyName;
     String companyID;
