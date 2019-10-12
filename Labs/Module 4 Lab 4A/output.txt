@@ -1,0 +1,5 @@
+1. This file contains 
+2. lines of text to 
+3. determine if you can 
+4. properly read and 
+5. write from a file.
