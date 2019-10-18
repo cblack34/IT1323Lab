@@ -1,0 +1,5 @@
+Max Temp: 95
+Min Temp: 81
+
+Temperatures plus 10:
+93 97 91 98 100 102 105 
