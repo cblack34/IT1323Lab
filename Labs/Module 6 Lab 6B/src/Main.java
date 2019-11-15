@@ -1,11 +1,12 @@
 /*
-* Name: Clayton Black
-* Date: 11-08-2019
-* Assignment Name: Module 6 Lab 6A
-* Assignment Brief: inheritance
-* Sources:
-* - Book Chapter 11
-*/
+ * Name: Clayton Black
+ * Date: 11-14-2019
+ * Assignment Name: Module 6 Lab 6B
+ * Assignment Brief: Linked List
+ * Sources:
+ * - Book Chapter 24
+ */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,10 +16,47 @@ public class Main {
         Trivia t4 = new Trivia("Trivia Game 4", 4, 1.0, 2);
         Trivia t5 = new Trivia("Trivia Game 5", 5, 1.0, 2);
 
-        System.out.println(t1);
-        System.out.println(t2);
-        System.out.println(t3);
-        System.out.println(t4);
-        System.out.println(t5);
+        System.out.println("Create Blank Linked List");
+        TriviaLinkedList ll = new TriviaLinkedList();
+        System.out.println(ll);
+        printLinkedList(ll);
+
+        System.out.println("Insert 5 Trivia objects");
+        addAndPrint(ll, t5);
+        addAndPrint(ll, t4);
+        addAndPrint(ll, t3);
+        addAndPrint(ll, t2);
+        addAndPrint(ll, t1);
+
+        System.out.println("Remove node by triviaGameID");
+        ll.removeByID(3);
+        printLinkedList(ll);
+
+        System.out.println("Remove node that doesn't exist");
+
+        Trivia removed = ll.removeByID(23);
+        if (removed == null) {
+            System.out.println("Node Does Not Exist");
+        }
+        printLinkedList(ll);
+    }
+
+    public static void printLinkedList(TriviaLinkedList ll){
+        TriviaNode current = ll.head;
+
+        System.out.print("\n{\n");
+        while (current != null){
+            System.out.println("\t" + current.element);
+            current = current.next;
+        }
+
+        System.out.print("}\n\n");
+
+    }
+
+    public static void addAndPrint(TriviaLinkedList ll, Trivia t){
+        ll.insert(t);
+        System.out.println(ll);
+        printLinkedList(ll);
     }
 }
