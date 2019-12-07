@@ -1,0 +1,10 @@
+Sorted Values:
+1122
+1171
+1171
+1289
+1357
+1401
+
+Average Value: 1251.833374
+Max Value: 1401
